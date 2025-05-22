@@ -5,15 +5,15 @@
 #                                                     +:+ +:+         +:+      #
 #    By: eaqrabaw <eaqrabaw@student.42amman.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/05/22 07:06:57 by eaqrabaw          #+#    #+#              #
-#    Updated: 2025/05/22 08:33:41 by eaqrabaw         ###   ########.fr        #
+#    Created: 2025/05/22 08:21:04 by eaqrabaw          #+#    #+#              #
+#    Updated: 2025/05/22 08:37:53 by eaqrabaw         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = megaphone
+NAME = 
 CC = c++
 CPPFLAGS = -Wall -Werror -Wextra -std=c++98
-CPPFiles = megaphone
+CPPFiles = 
 OBJ_DIR = obj
 SOURCE = $(addsuffix .cpp, $(CPPFiles))
 OBJECTS = $(addprefix $(OBJ_DIR)/, $(addsuffix .o, $(CPPFiles)))
