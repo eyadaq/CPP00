@@ -113,14 +113,3 @@ To clean up object files and executables:
 make clean
 make fclean
 ```
-
----
-
-## ✅ Evaluation
-
-Don't forget the 42 evaluation process:
-
-* Follow the subject requirements precisely.
-* Use the norminette (or applicable 42 standards).
-* Avoid memory leaks (check using `valgrind`).
-* Ensure code readability and proper class structure.
