@@ -6,12 +6,12 @@
 #    By: eaqrabaw <eaqrabaw@student.42amman.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/22 07:06:57 by eaqrabaw          #+#    #+#              #
-#    Updated: 2025/08/31 10:54:03 by eaqrabaw         ###   ########.fr        #
+#    Updated: 2025/08/31 11:56:14 by eaqrabaw         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = megaphone
-CPP = c++
+CXX = c++
 CPPFLAGS = -Wall -Werror -Wextra -std=c++98
 SRC = megaphone
 OBJ_File = obj
@@ -21,10 +21,10 @@ OBJ = $(addprefix $(OBJ_File)/, $(addsuffix .o, $(SRC)))
 all : $(NAME)
 
 $(NAME) : $(OBJ)
-	$(CPP) -o $@ $(OBJ)
+	$(CXX) -o $@ $(OBJ)
 
 $(OBJ_File)/%.o : %.cpp | $(OBJ_File)
-	$(CPP) $(CPPFLAGS) -c $< -o $@
+	$(CXX) $(CPPFLAGS) -c $< -o $@
 
 $(OBJ_File) :
 	@mkdir -p $@
