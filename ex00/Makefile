@@ -6,7 +6,7 @@
 #    By: eaqrabaw <eaqrabaw@student.42amman.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/22 07:06:57 by eaqrabaw          #+#    #+#              #
-#    Updated: 2025/08/31 11:56:14 by eaqrabaw         ###   ########.fr        #
+#    Updated: 2025/09/01 20:00:49 by eaqrabaw         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ CXX = c++
 CPPFLAGS = -Wall -Werror -Wextra -std=c++98
 SRC = megaphone
 OBJ_File = obj
-SOURCE = $(addsuffix.cpp, $(SRC))
+SOURCE = $(addsuffix .cpp, $(SRC))
 OBJ = $(addprefix $(OBJ_File)/, $(addsuffix .o, $(SRC)))
 
 all : $(NAME)
