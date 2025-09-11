@@ -6,7 +6,7 @@
 #    By: eaqrabaw <eaqrabaw@student.42amman.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/22 08:21:04 by eaqrabaw          #+#    #+#              #
-#    Updated: 2025/09/01 20:24:48 by eaqrabaw         ###   ########.fr        #
+#    Updated: 2025/09/11 10:17:32 by eaqrabaw         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,8 +15,8 @@ CXX = c++
 RM = rm -rf
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 OBJ_FILE = obj
-SRCS = main
-OBJS =  $(addprefix $(OBJ_FILE)/, $(addsuffix .o, $(SRCS)))
+SRCS = main.cpp PhoneBook/PhoneBook.cpp Contact/Contact.cpp
+OBJS = $(addprefix $(OBJ_FILE)/, $(SRCS:.cpp=.o))
 
 all : $(NAME)
 
@@ -28,7 +28,7 @@ $(OBJ_FILE)/%.o : %.cpp | $(OBJ_FILE)
 
 $(OBJ_FILE) :
 	@mkdir -p $(OBJ_FILE)
-	
+
 clean :
 	$(RM) $(OBJ_FILE)
 
@@ -37,4 +37,4 @@ fclean : clean
 
 re : fclean all
 
-.PHONY : all fclean clean re
+.PHONY: all clean fclean re
