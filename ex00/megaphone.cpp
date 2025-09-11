@@ -6,22 +6,24 @@
 /*   By: eaqrabaw <eaqrabaw@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 07:44:24 by eaqrabaw          #+#    #+#             */
-/*   Updated: 2025/09/11 08:00:03 by eaqrabaw         ###   ########.fr       */
+/*   Updated: 2025/09/11 08:37:37 by eaqrabaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
+#include <cctype>
 
-void 	print_arg(char *s)
+void 	print_arg(const char *s)
 {
 	while (*s)
 	{
-		if (std::isalpha(*s))
+		unsigned char c = static_cast<unsigned char>(*s);
+		if (std::isalpha(c))
 		{
-			std::cout<<(char)std::toupper(*s);
+			std::cout<<static_cast<char>(std::toupper(c));
 		}
 		else 
-			std::cout<<(char)*s;
+			std::cout<<*s;
 		s++;
 	}
 }
