@@ -6,7 +6,7 @@
 /*   By: eaqrabaw <eaqrabaw@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/01 20:09:33 by eaqrabaw          #+#    #+#             */
-/*   Updated: 2025/09/11 12:08:32 by eaqrabaw         ###   ########.fr       */
+/*   Updated: 2025/09/11 12:13:36 by eaqrabaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,4 +75,11 @@ void Contact::setDarkestSecret(const std::string &ds)
 		this->_darkestSecret = ds;
 	else
 		std::cout<<"The NickName Cant be Empty\n";
+}
+
+void Contact::getContactInfoFromUser()
+{
+	std::cout<<"All Fields Should be filled with Data (Cant be Empty)\n";
+	std::cout<<"Please Enter the First Name\n"
+	
 }
