@@ -6,7 +6,7 @@
 /*   By: eaqrabaw <eaqrabaw@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/01 20:09:28 by eaqrabaw          #+#    #+#             */
-/*   Updated: 2025/09/11 11:26:13 by eaqrabaw         ###   ########.fr       */
+/*   Updated: 2025/09/11 11:36:19 by eaqrabaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ int 	main(void)
 
 		if (!input.compare("ADD"))
 		{
-			Contact newContact = Contact();
-			newContact.getContactInfoFromUser();
-			book.addContact(newContact)
+			Contact temp= Contact();
+			temp.getContactInfoFromUser();
+			book.addContact(temp)
 		}
 		else if (!input.compare("SEARCH"))
 		{

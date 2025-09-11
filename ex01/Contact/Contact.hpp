@@ -6,14 +6,15 @@
 /*   By: eaqrabaw <eaqrabaw@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/11 09:24:55 by eaqrabaw          #+#    #+#             */
-/*   Updated: 2025/09/11 11:26:39 by eaqrabaw         ###   ########.fr       */
+/*   Updated: 2025/09/11 12:11:16 by eaqrabaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CONTACT_HPP
 # define CONTACT_HPP
 #include <iostream>
-# include <string>
+#include <string>
+#include <iomanip>
 
 class Contact{
 	private :
@@ -24,8 +25,6 @@ class Contact{
 		std::string _darkestSecret;
 
 	public :
-		Contact();
-		Contact(const std::string &fn, const std::string &ln, const std::string &nn, const std::string &pn, const std::string &ds);
 		std::string getFirstName() const;
 		std::string getLastName() const;
 		std::string getNickName() const;
@@ -37,7 +36,7 @@ class Contact{
 		void setNickName(const std::string &nn);
 		void setPhoneNumber(const std::string &pn);
 		void setDarkestSecret(const std::string &ds);
-		void getContactInfoFromUser();	
+		void getContactInfoFromUser();
 };
 
 #endif
