@@ -6,7 +6,7 @@
 /*   By: eaqrabaw <eaqrabaw@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/11 08:40:15 by eaqrabaw          #+#    #+#             */
-/*   Updated: 2025/09/11 11:32:22 by eaqrabaw         ###   ########.fr       */
+/*   Updated: 2025/09/17 10:09:30 by eaqrabaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,8 @@ class PhoneBook{
 		Contact _contacts[MAX_CONTACTS];
 	public :
 		PhoneBook();
-		void addContact(const Contact &contact);
-		void printAllContacts();
-		void printContactById(int id);
+		~PhoneBook();
+		void addContact(Contact contact);
 };
 
 #endif
