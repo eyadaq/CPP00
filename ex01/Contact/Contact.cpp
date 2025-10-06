@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "Contact.hpp"
+#include <iostream>
 
 	std::string Contact::getFirstName() const
     {

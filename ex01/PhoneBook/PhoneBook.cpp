@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
+#include <iostream>
+#include <iomanip>
 
 PhoneBook::PhoneBook() :_index(0){}
 
