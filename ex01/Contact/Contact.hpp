@@ -23,8 +23,15 @@ class Contact{
 		std::string _nickName;
 		std::string _phoneNumber;
 		std::string _darkestSecret;
+		void _getUserInput(std::string &input, const std::string prompt);
 
 	public :
+		std::string getFirstName() const;
+		std::string getLastName() const;
+		std::string getNickName() const;
+		std::string getPhoneNumber() const;
+		std::string getDarkestSecret() const;
+		void setConstactDetails();
 		
 };
 

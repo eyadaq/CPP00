@@ -22,8 +22,9 @@ class PhoneBook{
 		Contact _contacts[MAX_CONTACTS];
 	public :
 		PhoneBook();
-		~PhoneBook();
 		void addContact(Contact contact);
+		void displayContacts() const;
+		void searchContact() const;
 };
 
 #endif
