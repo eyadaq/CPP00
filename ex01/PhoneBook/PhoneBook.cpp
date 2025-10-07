@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   PhoneBook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eaqrabaw <eaqrabaw@student.42amman.com>    +#+  +:+       +#+        */
+/*   By: eaqrabaw <eaqrabaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/01 20:09:36 by eaqrabaw          #+#    #+#             */
-/*   Updated: 2025/09/17 10:13:51 by eaqrabaw         ###   ########.fr       */
+/*   Updated: 2025/10/07 20:21:28 by eaqrabaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,8 @@ void PhoneBook::searchContact() const
     std::cout << "Enter the index of the contact to search: ";
     std::cin >> index;
     std::cin.ignore();
+    if (std::cin.eof())
+        exit(1);
 
     if (index < 1 || index > (this->_index < MAX_CONTACTS ? this->_index : MAX_CONTACTS))
     {
@@ -67,6 +69,6 @@ void PhoneBook::searchContact() const
     std::cout << "First Name: " << contact.getFirstName() + "\n";
     std::cout << "Last Name: " << contact.getLastName() + "\n";
     std::cout << "Nick Name: " << contact.getNickName() + "\n";
-    // Check if we should display the darkest secret
     std::cout << "Phone Number: " << contact.getPhoneNumber() + "\n";
+    std::cout << "Darkest Secret: " << contact.getDarkestSecret() + "\n";
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Contact.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eaqrabaw <eaqrabaw@student.42amman.com>    +#+  +:+       +#+        */
+/*   By: eaqrabaw <eaqrabaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/11 09:24:55 by eaqrabaw          #+#    #+#             */
-/*   Updated: 2025/09/17 10:05:16 by eaqrabaw         ###   ########.fr       */
+/*   Updated: 2025/10/07 20:17:39 by eaqrabaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define CONTACT_HPP
 
 #include <string>
+#include <stdlib.h>
 
 
 class Contact{
@@ -23,7 +24,7 @@ class Contact{
 		std::string _nickName;
 		std::string _phoneNumber;
 		std::string _darkestSecret;
-		void _getUserInput(std::string &input, const std::string prompt);
+		bool _getUserInput(std::string &input, const std::string prompt);
 
 	public :
 		std::string getFirstName() const;
@@ -31,7 +32,7 @@ class Contact{
 		std::string getNickName() const;
 		std::string getPhoneNumber() const;
 		std::string getDarkestSecret() const;
-		void setConstactDetails();
+		bool setContactDetails();
 		
 };
 

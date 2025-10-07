@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   megaphone.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eaqrabaw <eaqrabaw@student.42amman.com>    +#+  +:+       +#+        */
+/*   By: eaqrabaw <eaqrabaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 07:44:24 by eaqrabaw          #+#    #+#             */
-/*   Updated: 2025/09/11 08:37:37 by eaqrabaw         ###   ########.fr       */
+/*   Updated: 2025/10/07 20:03:02 by eaqrabaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,6 @@ int		main(int argc, char **argv)
 		{
 			print_arg(*argv);
 			argv++;
-			if (*argv)
-				std::cout<<" ";
 		}
 		std::cout<<std::endl;
 	}

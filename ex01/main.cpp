@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eaqrabaw <eaqrabaw@student.42amman.com>    +#+  +:+       +#+        */
+/*   By: eaqrabaw <eaqrabaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/01 20:09:28 by eaqrabaw          #+#    #+#             */
-/*   Updated: 2025/09/17 10:06:17 by eaqrabaw         ###   ########.fr       */
+/*   Updated: 2025/10/07 20:35:36 by eaqrabaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,27 +16,25 @@
 int 	main(void)
 {
 	std::string command;
-	int flag;
 	PhoneBook book = PhoneBook();
-	flag = 1;
-	while (flag)
+	
+	while (1)
 	{
 		std::cout << "Enter a command (ADD, SEARCH, EXIT): ";
 		std::getline(std::cin, command);
+		if (std::cin.eof() || !command.compare("EXIT"))
+			return (1);
 		if (!command.compare("ADD"))
 		{
 			Contact contact = Contact();
-			contact.setConstactDetails();
+			if (!contact.setContactDetails())
+				return (1);
 			book.addContact(contact);
 		}
 		else if (!command.compare("SEARCH"))
 		{
 			book.displayContacts();
 			book.searchContact();
-		}
-		else if (!command.compare("EXIT"))
-		{
-			flag = 0;
 		}
 	}
 	return (0);
